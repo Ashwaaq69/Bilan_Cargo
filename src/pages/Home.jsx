@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Services from "./Services";
-import VisionMission from "../components/VisionMission";
+import VisionMission from "./VisionMission";
 
 const Home = () => {
   return (
