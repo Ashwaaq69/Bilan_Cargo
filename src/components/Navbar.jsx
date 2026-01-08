@@ -1,21 +1,65 @@
-function Navbar() {
+import { Link, NavLink } from "react-router-dom";
+
+const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md">
+    <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-600">
-          BILAN CARGO
+
+        {/* Logo */}
+        <h1 className="text-2xl font-bold text-blue-900">
+          Bilan Cargo
         </h1>
 
-        <ul className="hidden md:flex space-x-6 font-medium">
-          <li><a href="#home" className="hover:text-blue-600 cursor-pointer">Home </a></li>
-          <li><a href="#about" className="hover:text-blue-600">About</a></li>
-          <li><a href="#services" className="hover:text-blue-600 cursor-pointer">Services</a></li>
-          <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+            }
+          >
+            Home
+          </NavLink>
 
-        </ul>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+            }
+          >
+            Services
+          </NavLink>
+
+          <NavLink
+            to="/vision-mission"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+            }
+          >
+            Vision & Mission
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+            }
+          >
+            Contact
+          </NavLink>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
-}
+};
 
 export default Navbar;
