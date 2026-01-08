@@ -1,70 +1,65 @@
 React + Vite Project
 
-This is a minimal React setup using Vite. It provides fast development with HMR (Hot Module Replacement) and includes some basic ESLint rules.
+This project is a minimal React setup using Vite, designed for fast development and modern workflows. It provides Hot Module Replacement (HMR), a simple project structure, and a basic ESLint configuration to help maintain code quality.
 
-Features
+✨ Features
 
-Minimal setup for React + Vite
+Minimal and fast setup for React + Vite
 
-Supports HMR for fast development
+Hot Module Replacement (HMR) for rapid development
 
 Basic ESLint configuration included
 
-Ready for expansion with TypeScript and advanced linting
+Ready for expansion with TypeScript and advanced linting rules
 
-Available Plugins
-1. @vitejs/plugin-react
+🔌 Available Plugins
+1️⃣ @vitejs/plugin-react
 
-Uses Babel (or oxc when using rolldown-vite
-)
+Uses Babel (or OXC when using rolldown-vite)
 
 Provides Fast Refresh
 
-Documentation
+Recommended for most React projects
 
-2. @vitejs/plugin-react-swc
+2️⃣ @vitejs/plugin-react-swc
 
 Uses SWC for Fast Refresh
 
 Lightweight and faster alternative to Babel
 
-Documentation
+Suitable for performance-focused setups
 
-React Compiler
+🧠 React Compiler
 
 The React Compiler is not enabled by default in this template due to potential impacts on development and build performance.
 
-To enable it, follow the official installation guide
-.
+To enable it, follow the official React installation guide.
 
-ESLint Configuration
+🧹 ESLint Configuration
 
-This template comes with a basic ESLint setup
+This template comes with a basic ESLint setup.
 
-For production applications, it is recommended to use TypeScript with type-aware lint rules enabled
+For production-level applications, it is recommended to:
 
-Check out the React + TS template
- for more information
+Use TypeScript
 
-Learn more about typescript-eslint
+Enable type-aware linting rules
 
-Getting Started
+Learn more:
 
+React + TypeScript template
+
+typescript-eslint documentation
+
+🚀 Getting Started
 Install dependencies
-
 npm install
 
-
 Start development server
-
 npm run dev
 
-
 Build for production
-
 npm run build
 
-
 Preview production build
-
 npm run preview
