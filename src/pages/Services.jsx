@@ -30,7 +30,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-50 mt-4">
+    <div className="bg-gray-50">
 
       {/* HERO SECTION */}
       <section className="relative h-[45vh] flex items-center justify-center text-white">
