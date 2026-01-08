@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero-cargo.png";
+import servicesImage from "../assets/services.png";
 
 const services = [
   {
@@ -36,7 +36,7 @@ const Services = () => {
       <section className="relative h-[45vh] flex items-center justify-center text-white">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${servicesImage})` }}
         ></div>
         <div className="absolute inset-0 bg-blue-900/70"></div>
 
